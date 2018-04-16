@@ -23,9 +23,17 @@
 	box-sizing: border-box;
 }
 
+.imagen1{
+	float: left;
+}
+
 .imagen1 img{
 	width: 300px;
 	height: 220px;
+}
+
+.imagen2{
+	float: right;
 }
 
 .imagen2 img{

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Settings</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/miestilos.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+  
+</head>
+
+<body>
+
+<!-- -Section header- -->
+
+<div class="header">
+  <div class="container">
+    <div class="logo">
+        <h3><a href="../index.html">WR</a></h3>
+    </div>
+    <div class="menu">
+        <a href="../places/index.html">PLACES</a>
+        <a href="../settings/index.html">SETTINGS</a>
+        <a href="../easy/index.html">EASY</a>
+        <a href="../global/global.html">GLOBAL</a>
+    </div>
+  </div>
+</div>
+
+<!-- -Section Header- -->
+
+  <div class="header">    
+      <h1>SETTINGS</h1>
+      <h3>Six Projects</h3>
+  </div>
+
+<!-- -Section Text- -->  
+
+
+  <div class="container">
+    
+     <div class="row">
+         <div class="twelve columns">
+            <div class="text">
+              <h1 class="title">Lorem Ipsum</h1>
+              <p class="text">
+                <span>Lorem Ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ipsum debitis, tempore, aliquam deleniti commodi veniam error atque odio quis vel voluptas praesentium labore inventore explicabo! In eos laudantium eius?</span>
+                
+                <span>Numquam impedit ex recusandae? Reiciendis repellendus quo facere laboriosam repudiandae cum id, debitis dignissimos animi rerum maxime adipisci, eveniet ad a. Explicabo esse expedita distinctio nostrum quia, provident, alias culpa.</span>
+              </p>
+              
+            </div>
+         </div>
+      </div>
+
+<!-- -Section Form- -->
+
+<h2>Responsive Form</h2>
+
+     <div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Spain</option>
+          <option value="canada">Germany</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+<!-- -Section footer- --> 
+
+  <footer class="bottom">
+      <p>© 2018 Six Project, All Rights Reserved</p>
+  </footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

@@ -67,6 +67,8 @@ body{
 }
 .imagen1 img:hover{
 	transform: scale(1.1);
+	border: 2px solid #55acee;
+	padding: 0;
 }
 
 .imagen2 img{
@@ -77,6 +79,8 @@ body{
 
 .imagen2 img:hover{
 	transform: scale(1.1);
+	border: 2px solid #55acee;
+	padding: 0;
 }
 
 

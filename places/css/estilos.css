@@ -1,6 +1,13 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 }
+
+
+/*---------------------------------------*/
+/*------------Sección cabecera-----------*/
+/*---------------------------------------*/
+
+
 .cabecera-jm{
 	background-image: url("../img/lago1.jpg");
 	background: cover;
@@ -14,6 +21,18 @@ body{
 	color: #f2f2f2;
 	padding-top: 100px;	
 }
+
+.cabecera-jm h1:hover{
+	transform: scale(1.5);
+	color: #55acee;
+}
+
+
+/*---------------------------------------*/
+/*------------Sección contenedor---------*/
+/*---------------------------------------*/
+
+
 
 .contenedor-jm{
 	width: 100%;
@@ -30,7 +49,13 @@ body{
 	color: #7b7b7b;
 }
 
-.imagen1{
+
+/*---------------------------------------*/
+/*------------Sección imágenes-----------*/
+/*---------------------------------------*/
+
+
+.imagen1 .imagen2{
 	float: left;
 	box-sizing: border-box;
 }
@@ -40,10 +65,8 @@ body{
 	height: 300px;
 	padding: 30px 0 30px;
 }
-
-.imagen2{
-	float: right;
-	box-sizing: border-box;
+.imagen1 img:hover{
+	transform: scale(1.1);
 }
 
 .imagen2 img{
@@ -51,6 +74,17 @@ body{
 	height: 300px;
 	padding: 30px 0 30px;
 }
+
+.imagen2 img:hover{
+	transform: scale(1.1);
+}
+
+
+/*---------------------------------------*/
+/*------------Sección footer-------------*/
+/*---------------------------------------*/
+
+
 
 .pie-jm{
 	height: 250px;

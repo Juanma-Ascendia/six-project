@@ -64,6 +64,7 @@ body{
 	width: 430px;
 	height: 270px;
 	transform: scaleX(-1);
+	border-radius: 5px;
 }
 .imagen1 img:hover{
 	width: 430px;
@@ -75,6 +76,7 @@ body{
 	width: 430px;
 	height: 270px;
 	transition: width 2s, height 2s, transform 2s;
+	border-radius: 5px;
 }
 
 .imagen2 img:hover{

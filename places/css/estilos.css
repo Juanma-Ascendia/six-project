@@ -58,6 +58,7 @@ body{
 .imagenes{
 	margin-bottom: 25px;
 }
+
 .imagen1 .imagen2{
 	float: left;
 	box-sizing: border-box;
@@ -66,20 +67,24 @@ body{
 .imagen1 img{
 	width: 460px;
 	height: 300px;
+	transition: width 2s, height 2s, transform 2s;
 }
 .imagen1 img:hover{
-	transform: scale(1.05);
-	padding: 0;
+	width: 460px;
+    height: 300px;
+    transform: rotate(360deg);
 }
 
 .imagen2 img{
 	width: 460px;
 	height: 300px;
+	transition: width 2s, height 2s, transform 2s;
 }
 
 .imagen2 img:hover{
-	transform: scale(1.05);
-	padding: 0;
+	width: 460px;
+    height: 300px;
+    transform: rotate(360deg);
 }
 
 
@@ -111,7 +116,7 @@ body{
       position:fixed;
       z-index: 100;
       width: 100%;
-      background: rgba(0,0,0,0.2);
+      background: rgba(0,0,0,0.4);
 
     }
     

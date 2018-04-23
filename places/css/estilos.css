@@ -10,7 +10,7 @@ body{
 
 .cabecera-jm{
 	background-image: url("../img/lago1.jpg");
-	background: cover;
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 400px;
 	width: 100%;
@@ -55,6 +55,9 @@ body{
 /*---------------------------------------*/
 
 
+.imagenes{
+	margin-bottom: 25px;
+}
 .imagen1 .imagen2{
 	float: left;
 	box-sizing: border-box;
@@ -63,23 +66,19 @@ body{
 .imagen1 img{
 	width: 460px;
 	height: 300px;
-	padding: 30px 0 30px;
 }
 .imagen1 img:hover{
-	transform: scale(1.1);
-	border: 2px solid #55acee;
+	transform: scale(1.05);
 	padding: 0;
 }
 
 .imagen2 img{
 	width: 460px;
 	height: 300px;
-	padding: 30px 0 30px;
 }
 
 .imagen2 img:hover{
-	transform: scale(1.1);
-	border: 2px solid #55acee;
+	transform: scale(1.05);
 	padding: 0;
 }
 

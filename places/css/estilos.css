@@ -21,7 +21,6 @@ body{
 
 .cabecera-jm h1:hover{
 	transform: scale(1.1);
-	color: #55acee;
 }
 
 
@@ -62,25 +61,25 @@ body{
 }
 
 .imagen1 img{
-	width: 460px;
-	height: 300px;
+	width: 430px;
+	height: 270px;
 	transform: scaleX(-1);
 }
 .imagen1 img:hover{
-	width: 460px;
-    height: 300px;
+	width: 430px;
+    height: 270px;
     transform: rotate(360deg);
 }
 
 .imagen2 img{
-	width: 460px;
-	height: 300px;
+	width: 430px;
+	height: 270px;
 	transition: width 2s, height 2s, transform 2s;
 }
 
 .imagen2 img:hover{
-	width: 460px;
-    height: 300px;
+	width: 430px;
+    height: 270px;
     transform: rotate(360deg);
 }
 
@@ -109,11 +108,11 @@ body{
 
       box-sizing: border-box;
       padding-top:25px;
-      padding-bottom:25px;
+      
       position:fixed;
       z-index: 100;
       width: 100%;
-      background: rgba(0,0,0,0.4);
+      background: rgba(0,0,0,0.6);
 
     }
     
@@ -123,6 +122,7 @@ body{
   text-align:right;
   box-sizing: border-box;
   overflow: hidden;
+  padding-top: 10px;
 
 
 }
@@ -136,7 +136,8 @@ body{
 }
 
 .menu a:hover{
-  color: #FAFAFA; 
+  color: #FAFAFA;
+  text-decoration: underline;
 
 }
 

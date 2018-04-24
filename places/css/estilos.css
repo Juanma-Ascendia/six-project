@@ -44,6 +44,10 @@ body{
 .texto{
 	color: #7b7b7b;
 }
+.texto2{
+	color: #7b7b7b;
+	text-align: center;
+}
 
 
 /*---------------------------------------*/
@@ -62,7 +66,7 @@ body{
 
 .imagen1 img{
 	width: 430px;
-	height: 270px;
+    height: 270px;
 	transform: scaleX(-1);
 	border-radius: 5px;
 }
@@ -75,7 +79,7 @@ body{
 .imagen2 img{
 	width: 430px;
 	height: 270px;
-	transition: width 2s, height 2s, transform 2s;
+	transform: scaleX(-1);
 	border-radius: 5px;
 }
 
@@ -104,8 +108,9 @@ body{
 }
 
 /*menu*/
+
 .franja{
-      height:100px;
+      height: auto;
       border-bottom:1px solid #eee;
 
       box-sizing: border-box;

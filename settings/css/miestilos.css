@@ -2,24 +2,19 @@ body{
 	font-family: 'Open Sans', sans-serif;
 }
 
-
 .header{
-	background-image: url("../img/img_mountains.jpg");
-	background: cover;
-	background-repeat: no-repeat;
-	height: 400px;
-	width: 100%;
-} 
-
-.header{
+  background-image: url("../img/paisaje-de-montañas-en-otoño.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
 	text-align: center;
-	color: #f2f2f2;
-	padding-top: 100px;	
+	color: #000;
+	padding-top: 120px;	
 }
 
 .header h1:hover{
-	transform: scale(1.5);
-	color: #55acee;
+	transform: scale(1.2);
 }
 
 
@@ -43,6 +38,10 @@ body{
 .text{
 	color: #7b7b7b;
 }
+.text2{
+  text-align: center;
+  color: #7b7b7b;
+}
 
 
 
@@ -54,23 +53,21 @@ body{
 	text-align: center;
 	padding-top: 100px;
 	box-sizing: border-box;
-
 }
 
 /*menu*/
-.header {
-      height:100px;
-      border-bottom:1px solid #eee;
 
-      box-sizing: border-box;
-      padding-top:25px;
-      padding-bottom:25px;
-      position:fixed;
-      z-index: 100;
-      width: 100%;
-      background: rgba(0,0,0,0.2);
 
-    }
+.franja{
+  height: auto;
+  border-bottom:1px solid #eee;
+  box-sizing: border-box;
+  padding-top:25px;
+  position:fixed;
+  z-index: 100;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+}
     
 .menu{
   float:right;
@@ -78,8 +75,7 @@ body{
   text-align:right;
   box-sizing: border-box;
   overflow: hidden;
-
-
+  padding: 10px 200px 0 0;
 }
 
 .menu a{
@@ -91,7 +87,8 @@ body{
 }
 
 .menu a:hover{
-  color: #FAFAFA; 
+  color: #FAFAFA;
+  text-decoration: underline;
 
 }
 
@@ -107,12 +104,13 @@ li{
   text-align:left;
   box-sizing: border-box;
   overflow: hidden;
+  padding: 0 0 0 200px;
   
 }
 
 .logo h3{
   font-weight: 200;
-  
+  /*font-family: 'Dancing Script', cursive;*/
 
 
 }

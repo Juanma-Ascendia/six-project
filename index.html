@@ -40,10 +40,10 @@
         <h3><a href="#">WR</a></h3>
     </div>
     <div class="menu">
-        <a href="places/index.html">PLACES</a>
-        <a href="settings/index.html">SETTINGS</a>
-        <a href="easy/index.html">EASY</a>
-        <a href="global/global.html">GLOBAL</a>
+        <a href="places/places.html">PLACES</a>
+        <a href="settings/settings.html">SETTINGS</a>
+        <a href="easy/easy.html">EASY</a>
+        <a href="global/Global.html">GLOBAL</a>
     </div>
   </div>
 </div>
@@ -56,7 +56,7 @@
     <div class="principal">
        <div class="seven columns pad">
           <h1>Walk and Ride Template</h1>
-          <p>With a smartphone and the right app, you can find any spot on Earth. But the best navigation apps do a lot more. Look out for that speed trap. <br> <a href="#">Dan Rowinski</a>.</p>
+          <p><span class="subra">With a smartphone and the right app, you can find any spot</span><span class="subra"> on Earth. But the best navigation apps do a lot more. Look</span><span class="subra"> out for that speed trap. <br> <a href="#">Dan Rowinski</a>.</span></p>
         </div>
         <div class="five columns iphone">
           <img src="images/iphone.png" />
@@ -74,22 +74,22 @@
   <div class="row">
     <div class="three columns">
       <img src="images/pin.png" />
-      <h5>PLACES</h5>
+      <h5><b>PLACES</b></h5>
        <p>Seamlessly empower fully researched growth strategies and interoperable internal sources.</p>
     </div>
     <div class="three columns">
       <img src="images/settings.png" />
-      <h5>SETTINGS</h5>
+      <h5><b>SETTINGS</b></h5>
        <p>Collaboratively administrate turnkey channels whereas virtual e-tailers an other media.</p>
     </div>
     <div class="three columns">
       <img src="images/easy.png" />
-      <h5>EASY</h5>
+      <h5><b>EASY</b></h5>
        <p>Interactively procrastinate high-payoff content without backward-compatible data.</p>
     </div>
     <div class="three columns">
       <img src="images/saturn.png" />
-      <h5>GLOBAL</h5>
+      <h5><b>GLOBAL</b></h5>
        <p>Credibly innovate granular internal or "organic" sources whereas high standards in web-readiness.</p>
     </div>
   </div>
@@ -102,12 +102,13 @@
 <div class="container">
   <div class="row">
     <div class="seven columns">
-            <img src="images/discover.png" />
+            <img src="images/discover.png" style="width: 100%;
+    height: auto;" />
     </div>
-    <div class="five columns hi">
+    <div class="five columns">
       <h1>DISCOVER</h1>
        <p>Human rights momentum. World problem solving turmoil, change movements environmental pursue these aspirations initiative donation. Policy dialogue, underprivileged accessibility, asylum visionary, prevention beneficiaries carbon emissions reductions empower.</p>
-       <button>ola</button>
+       <button>Apple</button>
        <button>ola</button>
     </div>
   </div>
@@ -119,12 +120,9 @@
 <div class="video">
   <div class="container">
     <div class="row">
-      <h1>EXPLORE. WALK &amp; RIDE IN ACTION</h1>
+      <h1><b>EXPLORE. WALK &amp; RIDE IN ACTION</b></h1>
       <h4>Just try it for yourself</h4>
-      <video width="720" height="480" controls>
-          <source src="video/video.mp4" type="video/mp4">
-          Lo sentimos, no puedes ver el video.
-      </video>
+      <iframe src="https://player.vimeo.com/video/106575373" width="720" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     <div class="row">
         <div class="video-share-wrapper clearfix">
@@ -144,18 +142,44 @@
 <div class="azul">
   <div class="slider">
     <div class="container">
+    <!-- Seccion Slider ________________________________________
     <h3>People talking about #WalkandRide</h3>
 <p>Join our #WalkandRide adventure. Meet up in London this Saturday! Spread the word and join us for fun.</p>
+-->
+
+
+
+<div class="tab">
+                        <div class="box visible" style="display: none;">
+                            <h4>People talking about <a href="#">#WalkandRide</a></h4>
+                            <p>Join our #WalkandRide adventure. Meet up in London this Saturday! Spread the word and join us for fun.</p>
+                        </div>
+                        <div class="box" style="display: none;">
+                            <h4>Users loving <a href="#">#WalkandRide</a></h4>
+                            <p>Joining this weekend's #WalkandRide fun! @emmy_lemmy bring your dogs, we can make it a fun walk!</p>
+                        </div>
+                        <div class="box" style="display: block;">
+                            <h4>Folks enjoying <a href="#">#WalkandRide</a></h4>
+                            <p>Nothing to fear, the new #WalkandRide has my tiny street covered, so cool and such a powerful app.</p>
+                        </div>
+                        <ul class="tabs">
+                            <li class=""></li>
+                            <li class=""></li>
+                            <li class="active"></li>
+                        </ul>
+                        <a href="#" class="tab-prev"></a>
+                        <a href="#" class="tab-next"></a>
+  </div>
     </div>
   </div>
 </div>
-
 <!-- Seccion Video ________________________________________-->
 <div class="info">
   <div class="container">
     <div class="row">
       <div class="seven columns">
-        <img src="images/screen.png" alt="Welcome walk & ride">
+        <img src="images/screen.png" alt="Welcome walk & ride" style="width: 100%;
+    height: auto;">
       </div>
 
       <div class="five columns lista">
@@ -191,5 +215,26 @@
       <p>&copy; 2018 <strong>Six Project</strong>, Todos los derechos reservados</p>
     </div>
 </footer>
+
+<script>
+  // tab
+    $(function(){
+        $('.tabs').delegate('li:not(.active)','click',function(){
+            $(this).addClass('active').siblings().removeClass('active').parents('.tab').find('.box').hide().eq($(this).index()).fadeIn(250);
+        })
+    });
+
+    // tab arrows
+    if ( $(".tab").has(".tab-prev").length || $(".tab").has(".tab-next").length ) {
+        $('.tab-prev, .tab-next').click(function(){
+            var $active = $(this).parents(".tab").find(".tabs .active");
+            $next = $(this).hasClass('tab-prev') ? $active.prev() : $active.next();
+            if (!$next.length) $next = $(this).hasClass('tab-prev') ? $(this).parents(".tab").find('.tabs li:last') : $(this).parents(".tab").find('.tabs li:first');
+            $next.click();
+            return false;
+        });
+    }
+
+  </script>
 </body>
 </html>

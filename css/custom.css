@@ -1,15 +1,12 @@
 .franja{
-      height:100px;
+      height:auto;
       border-bottom:1px solid #eee;
-
       box-sizing: border-box;
-      padding-top:25px;
-      padding-bottom:25px;
+      padding:20px;
       position:fixed;
       z-index: 100;
       width: 100%;
-      background: rgba(0,0,0,0.2);
-
+      background: rgba(0,0,0,0.6);
     }
     
 .menu{
@@ -18,7 +15,8 @@
   text-align:right;
   box-sizing: border-box;
   overflow: hidden;
-
+  padding-top:20px;
+  
 
 }
 
@@ -31,7 +29,8 @@
 }
 
 .menu a:hover{
-  color: #FAFAFA; 
+  color: #FAFAFA;
+  text-decoration:underline; 
 
 }
 
@@ -77,11 +76,17 @@ color:#E6E6E6;
 font-size:20px;
 }
 
+.subra{
+    z-index: 100;
+    width: 100%;
+    background: rgba(0,0,0,0.2);
+
+}
 
 
 .iphone{
 
-padding-top:200px;
+padding-top:130px;
 padding-bottom:100px;
 
 }
@@ -100,21 +105,23 @@ padding-bottom:100px;
 
 .columnas, .video, .info, .newsletter{
 	background:#FFFFFF;
-	height:500px;
-	padding-top:150px;
+	height:auto;
+	padding-top:100px;
+  padding-bottom:50px;
 	box-sizing:border-box;
+
 }
 
 .discover{
 	background:#E6E6E6;
-	height:500px;
+	height:auto;
 	box-sizing:border-box;
-}
-
-.hi{
-	padding-top:120px;
+  padding-top:100px;
+  padding-bottom:50px;
 
 }
+
+
 
 
 
@@ -212,13 +219,14 @@ a{
 
 .video{
   text-align:center;
-  height:900px;
+  height:auto;
 }
 
 .azul{
   background:#2ECCFA;
-  height:400px;
-  padding-top:150px;
+  height:auto;
+  padding-top:100px;
+  padding-bottom:50px;
   box-sizing:border-box;
   text-align:center;
   color:#FFFFFF;
@@ -226,7 +234,9 @@ a{
 }
 
 .info{
-height:700px;
+height:auto;
+padding-top:100px;
+padding-bottom:50px;
 }
 
 .info li{
@@ -241,6 +251,8 @@ height:700px;
 .newsletter{
   background:#E6E6E6;
   text-align:center;
+  padding-top:100px;
+  padding-bottom:50px;
 }
 
 footer{

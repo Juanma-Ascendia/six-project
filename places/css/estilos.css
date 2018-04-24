@@ -23,6 +23,9 @@ body{
 .cabecera-jm h1:hover{
 	transform: scale(1.1);
 }
+.cabecera-jm p{
+	font-size: 17px;
+}
 
 
 /*---------------------------------------*/

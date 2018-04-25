@@ -98,10 +98,34 @@ unique needs of your vehicles including height, weight and load type.
   </div>
   </div>-->
 <footer>
-  <div class="pie">
-  <p>© 2014 Walk & Ride, All Rights Reserved</p>
-  </div>
+    <div class="container">
+      <p>&copy; 2018 <strong>Six Project</strong>, Todos los derechos reservados</p>
+    </div>
 </footer>
+
+
+<!--Boton arriba-->
+
+<a href="#" class="scrollup">Scroll</a>
+
+<script>
+    $(document).ready(function(){
+  
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+  
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+  
+    });
+</script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

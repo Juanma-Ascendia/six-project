@@ -16,7 +16,7 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -55,7 +55,7 @@
   <div class="row">
     <div class="principal">
        <div class="seven columns pad">
-          <h1>Walk and Ride Template</h1>
+          <h1>Walk and Ride <span>App</span></h1>
           <p><span class="subra">With a smartphone and the right app, you can find any spot</span><span class="subra"> on Earth. But the best navigation apps do a lot more. Look</span><span class="subra"> out for that speed trap. <br> <a href="#">Dan Rowinski</a>.</span></p>
         </div>
         <div class="five columns iphone">
@@ -219,9 +219,9 @@
     <h1>OUR NEWSLETTER</h1>
     <div>
       <form action="">
-                            <input type="email" placeholder="teo@teo.com" class="input-text">
-                            <input type="button" class="button" value="Subscribe">
-            </form>
+        <input type="email" placeholder="teo@teo.com" class="input-text">
+        <input type="button" class="button" value="Subscribe">
+      </form>
     </div>
     <p>If you want to recieve monthly updates from us just pop your email in the box.<br> We think that spam is for jerks. And we are no jerks.</p>
   </div>
@@ -253,5 +253,29 @@
     }
 
   </script>
+
+
+<!--Boton arriba-->
+
+<a href="#" class="scrollup">Scroll</a>
+
+<script>
+    $(document).ready(function(){
+  
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+  
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+  
+    });
+</script>
 </body>
 </html>

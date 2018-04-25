@@ -69,7 +69,9 @@ li{
 .logo a:hover{
        color: #FAFAFA; 
 }
-
+.tam{
+  font-size: 2em;
+}
 
 .principal{
         height:500px;

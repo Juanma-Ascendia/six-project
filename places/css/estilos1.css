@@ -8,7 +8,7 @@ a{
 }
 a:hover{
 	color: #0000ff;
-	text-decoration: underline;
+	text-decoration: underline;7
 }
 
 
@@ -50,13 +50,15 @@ a:hover{
 	text-align: center;
 	padding-top: 30px;
 	box-sizing: border-box;
+	/*color: #55acee;*/
 }
 .texto{
 	color: #7b7b7b;
 	text-align: center;
 }
 .places{
-	margin-top: 40px;
+	margin-top: 30px;
+	margin-bottom: 50px;
 	border-top: 1px solid #d9d9d9;
 }
 
@@ -68,7 +70,7 @@ a:hover{
 
 
 .imagenes{
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 .imagen1 .imagen2{
@@ -116,7 +118,6 @@ a:hover{
 .columnas{
 	box-sizing: border-box;
 	width: 300px;
-  background-color: #ebebeb;
 }
 .text{
 	width: 100%;
@@ -129,8 +130,8 @@ a:hover{
 	color: #7b7b7b;
 }
 .imagen3 img{
-	width: 290px;
-	height: 290px;
+	width: 300px;
+	height: auto;
 	background-color: #d9d9d9;
 }
 .imagen3{
@@ -138,6 +139,7 @@ a:hover{
 	text-align: center;
 }
 .clearfix{
+	padding-bottom: 30px;
 	border-bottom: 1px solid #d9d9d9;
 }
 
@@ -160,15 +162,15 @@ a:hover{
   box-sizing: border-box;
 }
 
-/*---------------------------------------*/
-/*------------Sección menu-------------*/
-/*---------------------------------------*/
+/*menu*/
 
 .franja{
   height: auto;
   border-bottom:1px solid #eee;
+
   box-sizing: border-box;
   padding-top:25px;
+  
   position:fixed;
   z-index: 100;
   width: 100%;
@@ -229,12 +231,7 @@ li{
 
 
 
-/*---------------------------------------*/
-/*------------Sección social-------------*/
-/*---------------------------------------*/
-
-
-
+/*Social*/
 ul{
     text-decoration: none;
     list-style: none;

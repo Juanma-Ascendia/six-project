@@ -16,12 +16,15 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
   
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="../css/custom.css">
   <link rel="stylesheet" href="css/estilos.css">
 
   <!-- Favicon
@@ -38,7 +41,7 @@
 <div class="franja">
   <div class="container">
     <div class="logo">
-        <h3><a href="../index.html">WR</a></h3>
+        <a href="../index.html"><i class="fas fa-bug tam"></i></a>
     </div>
     <div class="menu">
         <a href="places.html">PLACES</a>
@@ -163,12 +166,36 @@
 
 
 
-<!-- -Sección footer- --> 
+  
+<footer>
+    <div class="container">
+      <p>&copy; 2018 <strong>Six Project</strong>, Todos los derechos reservados</p>
+    </div>
+</footer>
 
-  <footer class="pie-jm">
-      <p>© 2018 Six Project, All Rights Reserved</p>
-  </footer>
 
+<!--Boton arriba-->
+
+<a href="#" class="scrollup">Scroll</a>
+
+<script>
+    $(document).ready(function(){
+  
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+  
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+  
+    });
+</script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
